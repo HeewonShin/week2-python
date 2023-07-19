@@ -1,4 +1,4 @@
-print('hello')
+#print('hello')
 
 # 리스트 == 배열
 # 튜플
@@ -185,25 +185,39 @@ print('hello')
 # else:
 #     my_dictionary['age'] = 50
 
-my_list = [1, 2, 3, 4, "A"]
-print(set(my_list))
-my_list.append("B")
-my_list.append("B")
-my_list.append("B")
-print(my_list)  # B가 계속 추가됨(중복 허용)
+# my_list = [1, 2, 3, 4, "A"]
+# print(set(my_list))
+# my_list.append("B")
+# my_list.append("B")
+# my_list.append("B")
+# print(my_list)  # B가 계속 추가됨(중복 허용)
 
-my_set = {1, 2, 3}
-my_set.add(4)
-my_set.add(4)  # set는 중복값을 허용하지 않아서 값을 추가해도 한번만 추가됨
-print(my_set)
+# my_set = {1, 2, 3}
+# my_set.add(4)
+# my_set.add(4)  # set는 중복값을 허용하지 않아서 값을 추가해도 한번만 추가됨
+# print(my_set)
 
-a = "Hello"
-my_set = set(a)  # set로 바꿈
-print(my_set)
+# a = "Hello"
+# my_set = set(a)  # set로 바꿈
+# print(my_set)
 
-set1 = {1, 2, 3, 4, 5}
-set2 ={4, 5, 6, 7}
+# set1 = {1, 2, 3, 4, 5}
+# set2 ={4, 5, 6, 7}
 
-print(set1 & set2)  # 교집합
-print(set1 | set2)  # 공집합
-print(set1 - set2)  # 차집합
+# print(set1 & set2)  # 교집합
+# print(set1 | set2)  # 공집합
+# print(set1 - set2)  # 차집합
+
+# print(5 == '5')
+# print(5 != "5")
+
+print(5 > 3 and 10 > 1)
+print(5 > 3 or 1 > 10)
+print(not False)
+
+score = int(input('점수가 몇 점인가요? '))
+
+if score >= 60 :
+    print('pass')
+else:
+    print('fail')
