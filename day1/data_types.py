@@ -103,3 +103,41 @@ print('hello')
 
 # example = 'a:B:c:d'
 # print(example.split()) # 공백이 없어서 안 나눠짐
+
+# a = [1, 2, 3]
+# a[2] = 4
+
+# del a[2] # a[2]의 값 삭제
+
+# a= [ 0, 2, 3, 4, 5, 6, 7, 8]
+# del a[1:6]
+
+# a = [0, 1, 2, 3]
+# a.append(4) # append는 list에 종속된 함수이다
+# # 참고로 append(["a", "b", "c", "d"])로 배열을 추가하면 새로운 배열이 하나의 요소로 추가됨
+
+# a.extend(["a", "b", "c", "d"]) # [0, 1, 2, 3, 4, 'a', 'b', 'c', 'd']
+# print(a)
+
+
+
+# a = [9, 3, 6, 1, 2, 33, 12]
+# a.sort() # a의 값을 순서대로 정렬,, a의 값이 바뀜
+# print(sorted(a)) # a값은 안 바뀜,, sorted는 list에 종속된 함수이다
+
+# a.reverse() #순서 바뀜,, a의 값 바뀜
+
+# a = ["a", "b", "c", "A", "B" ]
+# a.insert(2, "0") # 추가될 인덱스 위치, 추가할 값
+
+# print(a)
+
+# a = [1, 2, 3, 1, 2, 3]
+# a.remove(3) # 3을 찾아서 제거, 중복이 있으면 제일 앞쪽 제거
+
+# a.pop() # 제일 마지막 요소 제거,, a.pop(제거할 인덱스)
+# print(a) # [1, 2, 1, 2]
+
+a = ["A", "a", "b", "c", "e", "d"]
+print(a.count("A"))
+print(sorted(a))

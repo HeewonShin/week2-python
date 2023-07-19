@@ -20,3 +20,13 @@ print(str3.replace("-", ""))
 a = "hello"
 b = " python"
 print(a+"! "+b)
+
+# green 삭제
+color = ['red', 'pink', 'orange', 'yellow','green', 'purple', 'black', 'white']
+color.remove('green')
+print(color)
+
+# red 다음에 pink 추가
+color2 = ['red', 'orange', 'green', 'blue', 'black', 'white']
+color2.insert(1, 'pink')
+print(color2)
