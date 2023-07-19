@@ -153,34 +153,57 @@ print('hello')
 # print(len(my_list))  # 4
 # print(len(my_list[3]))  # 3
 
-my_dictionary = dict()  # 빈 딕셔너리
-my_dictionary = {'name':'Heewon', 'location':'Yangsan'}
+# my_dictionary = dict()  # 빈 딕셔너리
+# my_dictionary = {'name':'Heewon', 'location':'Yangsan'}
 
-my_dictionary['name'] = 'Paul'  # 키, 밸류값 변경하기
-del my_dictionary['age']
-my_dictionary['favorite_foods'] = [{'name':'pizza',
-                                    'is_healthy':False},
-                                    {'name':'hamburger',
-                                    'is_healty':False}]
-print(my_dictionary)
-print(my_dictionary['favorite_foods'])
-print(my_dictionary.get('age'))  #  키 값 찾기!!
-print(my_dictionary.get("office_location", '모름'))  # 찾는 key 값, 없는 경우 출력될 값
+# my_dictionary['name'] = 'Paul'  # 키, 밸류값 변경하기
+# del my_dictionary['age']
+# my_dictionary['favorite_foods'] = [{'name':'pizza',
+#                                     'is_healthy':False},
+#                                     {'name':'hamburger',
+#                                     'is_healty':False}]
+# print(my_dictionary)
+# print(my_dictionary['favorite_foods'])
+# print(my_dictionary.get('age'))  #  키 값 찾기!!
+# print(my_dictionary.get("office_location", '모름'))  # 찾는 key 값, 없는 경우 출력될 값
 
-for key in my_dictionary.keys():
-    print(key)
+# for key in my_dictionary.keys():
+#     print(key)
     
-print(my_dictionary.keys())
-print(my_dictionary.values())
-print(my_dictionary.items())
-for key, value in my_dictionary.items():
-    print('keys : ', key)
-    print('values : ', value)
+# print(my_dictionary.keys())
+# print(my_dictionary.values())
+# print(my_dictionary.items())
+# for key, value in my_dictionary.items():
+#     print('keys : ', key)
+#     print('values : ', value)
     
 
-print('age' in my_dictionary)  # age라는 key값 출력,, true/false 출력
+# print('age' in my_dictionary)  # age라는 key값 출력,, true/false 출력
 
-if 'age' in my_dictionary:
-    pass
-else:
-    my_dictionary['age'] = 50
+# if 'age' in my_dictionary:
+#     pass
+# else:
+#     my_dictionary['age'] = 50
+
+my_list = [1, 2, 3, 4, "A"]
+print(set(my_list))
+my_list.append("B")
+my_list.append("B")
+my_list.append("B")
+print(my_list)  # B가 계속 추가됨(중복 허용)
+
+my_set = {1, 2, 3}
+my_set.add(4)
+my_set.add(4)  # set는 중복값을 허용하지 않아서 값을 추가해도 한번만 추가됨
+print(my_set)
+
+a = "Hello"
+my_set = set(a)  # set로 바꿈
+print(my_set)
+
+set1 = {1, 2, 3, 4, 5}
+set2 ={4, 5, 6, 7}
+
+print(set1 & set2)  # 교집합
+print(set1 | set2)  # 공집합
+print(set1 - set2)  # 차집합
