@@ -138,6 +138,49 @@ print('hello')
 # a.pop() # 제일 마지막 요소 제거,, a.pop(제거할 인덱스)
 # print(a) # [1, 2, 1, 2]
 
-a = ["A", "a", "b", "c", "e", "d"]
-print(a.count("A"))
-print(sorted(a))
+# a = ["A", "a", "b", "c", "e", "d"]
+# print(a.count("A"))
+# print(sorted(a))
+
+# my_list = [0] * 10
+# my_tuple = (0, ) * 10 # 튜플로 인식 시키려면 ,콤마를 찍어야됨
+
+# print(my_list)
+# print(my_tuple)
+
+# my_list = [1, 2, 3, ["a", "b", "c"]]
+# print(my_list[3][2])
+# print(len(my_list))  # 4
+# print(len(my_list[3]))  # 3
+
+my_dictionary = dict()  # 빈 딕셔너리
+my_dictionary = {'name':'Heewon', 'location':'Yangsan'}
+
+my_dictionary['name'] = 'Paul'  # 키, 밸류값 변경하기
+del my_dictionary['age']
+my_dictionary['favorite_foods'] = [{'name':'pizza',
+                                    'is_healthy':False},
+                                    {'name':'hamburger',
+                                    'is_healty':False}]
+print(my_dictionary)
+print(my_dictionary['favorite_foods'])
+print(my_dictionary.get('age'))  #  키 값 찾기!!
+print(my_dictionary.get("office_location", '모름'))  # 찾는 key 값, 없는 경우 출력될 값
+
+for key in my_dictionary.keys():
+    print(key)
+    
+print(my_dictionary.keys())
+print(my_dictionary.values())
+print(my_dictionary.items())
+for key, value in my_dictionary.items():
+    print('keys : ', key)
+    print('values : ', value)
+    
+
+print('age' in my_dictionary)  # age라는 key값 출력,, true/false 출력
+
+if 'age' in my_dictionary:
+    pass
+else:
+    my_dictionary['age'] = 50

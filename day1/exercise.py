@@ -30,3 +30,4 @@ print(color)
 color2 = ['red', 'orange', 'green', 'blue', 'black', 'white']
 color2.insert(1, 'pink')
 print(color2)
+
