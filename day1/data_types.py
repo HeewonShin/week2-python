@@ -211,13 +211,150 @@
 # print(5 == '5')
 # print(5 != "5")
 
-print(5 > 3 and 10 > 1)
-print(5 > 3 or 1 > 10)
-print(not False)
+# print(5 > 3 and 10 > 1)
+# print(5 > 3 or 1 > 10)
+# print(not False)
 
-score = int(input('점수가 몇 점인가요? '))
+# score = int(input('점수가 몇 점인가요? '))
 
-if score >= 60 :
-    print('pass')
-else:
-    print('fail')
+# if score >= 60 :
+#     print('pass')
+# else:
+#     print('fail')
+
+# a = 10
+# while a > 0:
+#     print('hello')
+#     a -= 1
+    
+    
+# a = -5
+# while a < 0:
+#     print('a is below 0')
+#     a += 1
+
+# my_list = ['A', 'B', 'C', 'D']
+# for letter in my_list:  # 변수명 잘 정하기!
+#     print(letter)
+
+# # for i in range(len(my_list)):
+# #    print(my_list[i])
+
+# # for i in range(5):  # i는 0부터 시작, 5개 출력
+# #     print(i)
+
+# def say_hello(name):
+#     print('hello', name)
+    
+# say_hello('희원')
+
+# abs 함수
+# print(abs(-3))
+# print(abs(-3.5))
+
+# #id 함수
+# a = 3
+# print(id(a))
+
+# b = 3
+# print(id(b))
+# print(id(a is b)) #  객체 주소값 출력됨
+
+
+# # sum 함수 : 합계 구해줌
+# print(sum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+
+# def say_hello(my_list):
+#     if not isinstance(my_list, list):
+#         print("Error")
+#         return
+#     for name in my_list:
+#         print("hello", name)
+        
+# say_hello("Mike")
+
+# range함수
+# print(range(5))  # 총 3개의 값이 들어감,,(시작값, 0부터 시작하니까 최대값 -1, 증가량 혹은 감소량)
+# for i in range(5, 0, -2):
+#     print(i)
+    
+# # filter 함수 : true인 것만 걸러줌,,(g함수, 반복 가능한 데이터) 
+    
+# a = [5, 3, 2, 1, 4]
+# print(sorted(a))
+# a.sort()
+# print(a)
+
+# def positive(x):
+#     return x > 0
+# a = [1, 3, 0, -4, -8]
+
+# print(list(filter(positive, a)))
+
+
+# enumerate : 인덱스를 포함하는 enumerate객체를 리턴,,  많이 사용!
+
+# colors = ["white", "red", "brown", "blue"]
+# names = ["Lukas", "Mike", "Yoon", "Lee"]
+
+# for i, name in enumerate(names):
+#     print(name, f'likes color {colors[i]}')  # f를 붙여주면 자동으로 {}안을 변수로 인식!
+    
+
+# number_list = [55, 21, 1, 158, 88, 213]
+# print(max(number_list))
+
+# int함수 : 소수점 값은 무조건 내림 처리!
+# print(int('35'))
+# print(int(3.8))
+
+# # tuple 함수
+# a = [1,1, 1, 1 ,1 ,1 ,1 ,1, 4, 4, 4]
+# print(tuple(a))
+
+# a = '3.5'
+# print(float(a))
+
+# print(bool('a'))  # 0이 아닌 대부분의 수는 true
+
+# print(len("Dfsafa"))
+# print(len(['d', 5, 'd']))
+
+# a = ['a', 'b', 'c', 'd', 'e', 'f']
+# for i in range(0, len(a)):
+#     print(a[i])
+    
+# a = 3.5
+# print(str(a) == '3.5')
+
+# print(type(str(a)))
+
+# 외장함수
+# import os
+# print(os.getcwd())  # get current working directory
+# print(os.name)
+
+# import time
+# # from time import time
+# print(time.time())  # epock 검색해서 넣어보면 시간 알 수 있음
+
+# def million_operations_function():
+#     start = time.time()
+#     my_list = []
+#     for _ in range(0, 1000000): # i를 사용하지 않을 때 _ 로 표시   
+#         my_list.append(0)
+        
+#     end = time.time()
+#     print(end - start)  # 1000000번 찍는데 얼마나 걸렸는지 시간 잴 수 있다
+    
+    
+# import datetime
+# now = datetime.datetime.now()
+# print(now.month)
+# print(now.day)
+# print(now.hour)
+# print(now.minute)    
+        
+        
+import random
+print(random.randint(0, 10))  # random 함수 : 0~10 사이의 숫자 랜덤하게 나옴
